@@ -9,8 +9,6 @@
     2. virtualenv venv
 4. 安裝相依套件，執行以下命令：
   pip install -r requirements.txt
-5. 設定環境變數，複製 example.env 到 .env，並根據需要修改其中的設定。
-  cp example.env .env
   
 使用步驟
 1. 啟動 Flask 應用程式，執行以下命令：
