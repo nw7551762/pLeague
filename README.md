@@ -5,8 +5,8 @@
 2. 進入專案資料夾。
 3. 建立虛擬環境，使用 virtualenv 或 conda 都可以。
   例如：
+    pip install virtualenv
     virtualenv venv
-    source venv/bin/activate
 4. 安裝相依套件，執行以下命令：
   pip install -r requirements.txt
 5. 設定環境變數，複製 example.env 到 .env，並根據需要修改其中的設定。
