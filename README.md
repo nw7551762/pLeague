@@ -15,3 +15,6 @@
   flask run
 開啟瀏覽器，在網址列輸入 http://localhost:5000/
 現在您可以使用此 Flask 應用程式。
+
+
+<img width="1120" alt="pleague" src="https://user-images.githubusercontent.com/118497430/236136813-d06f466f-39fb-49c8-9ee1-99cad70c6969.png">
