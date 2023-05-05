@@ -92,51 +92,6 @@ function data_to_cfg(data, axis_x, axis_y) {
     return { team_cfgs, bounds };
 }
 
-//修改中
-// function data_to_cfg_by_per_player(data, axis_x, axis_y) {
-//     let players_data_cfgs = []
-//     let i = 0;
-//     const players = [];
-//     // bounds 紀錄 x y軸上下限 
-//     let bounds = [0, 0, 0, 0]
-//     for (let team_name in data) {
-//         // 球隊config物件
-//         let team_cfg = new TeamCfg(team_name, players_cfg_arr, 10, backgroundColor[i])
-//         i += 1;
-//         //獲取球員照片
-//         const image1 = new Image();
-//         //<img src="/player-image/{player_name}" alt="球員照片">
-//         image1.src = ; // Replace this URL with your image URL
-
-//         // for team 把球隊裡的數據加入
-//         for (let player_name in team) {
-//             let data_x = parseInt(team[player_name][axis_x]);
-//             let data_y = parseInt(team[player_name][axis_y]);
-//             // 球員cfg物件
-//             let player = new PlayerThreePointsCfg(
-//                 player_name,
-//                 data_x,
-//                 data_y
-//             );
-//             player.pointRadius = 10;
-//             player.backgroundColor = 'transparent';
-//             player.pointStyle = image;
-//             bounds[0] = Math.max(bounds[0], data_x);
-//             bounds[1] = Math.max(bounds[1], data_y);
-//             bounds[2] = Math.min(bounds[2], data_x);
-//             bounds[3] = Math.min(bounds[3], data_y);
-
-//             //加入cfg arr
-//             players_cfg_arr.push(player);
-//         }
-
-//         //球員數據物件按照隊伍分類放入 teams物件(map)
-//         team_cfgs.push(team_cfg);
-//     }
-
-//     return { team_cfgs, bounds };
-// }
-
 // 將 scatterChart 設為全局變量
 let scatterChart;
 function plotChart(data_cfg, bounds) {
