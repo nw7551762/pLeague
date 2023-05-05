@@ -19,16 +19,6 @@ window.onload = function () {
     });
 }
 
-//load 球員照片
-async function loadImage(playerName) {
-    player_imgs = {}
-    const response = await fetch(`/player-image/${playerName}`);
-    const blob = await response.blob();
-    const imageUrl = URL.createObjectURL(blob);
-    const image = new Image();
-    image.src = imageUrl;
-    return image;
-}
 
 function TeamCfg(team_name, players_cfg, pointRadius, backgroundColor) {
     this.label = team_name;
